@@ -66,7 +66,7 @@
 
 //lastitem.style.color = 'blue'
 
-var itemList = document.querySelector('#items');
+//var itemList = document.querySelector('#items');
 //console.log(itemList.parentNode)
 
 //itemList.parentNode.style.backgroundColor= 'grey'
@@ -95,19 +95,61 @@ var itemList = document.querySelector('#items');
 
 //console.log(itemList.previousElementSibling)
 
-var newDiv = document.createElement('div');
-newDiv.className= 'hello';
+//var newDiv = document.createElement('div');
+//newDiv.className= 'hello';
 
-newDiv.id = 'hello'
-newDiv.setAttribute('title', 'hello Div')
+//newDiv.id = 'hello'
+//newDiv.setAttribute('title', 'hello Div')
 
-var newDivText = document.createTextNode('Hello world')
+//var newDivText = document.createTextNode('Hello world')
 
-newDiv.appendChild(newDivText);
+//newDiv.appendChild(newDivText);
 
-var container = document.querySelector('header .container');
-var h1 = document.querySelector('header .h1')
-console.log(newDiv)
-newDiv.style.fontSize= '30px'
+//var container = document.querySelector('header .container');
+//var h1 = document.querySelector('header .h1')
+//console.log(newDiv)
+//newDiv.style.fontSize= '30px'
 
-container.insertBefore(newDiv,h1)
+//container.insertBefore(newDiv,h1)
+
+//var button = document.getElementById('button').addEventListener
+//('click', buttonClick);
+
+
+//function buttonClick(e){
+
+
+
+//document.getElementById('header-title').textContent='AYAN'
+//document.querySelector('#main').style.backgroundColor= '#f4f4f4'
+
+//console.log(e.target)
+//console.log(e.target.classList)
+//var output = document.getElementById('output');
+//output.innerHTML='<h3>'+e.target.id+'</h3>'
+//console.log(e.clientX)
+//console.log(e.clientY)
+
+//console.log(e.altKey)
+
+//}
+
+//var button = document.getElementById('button')
+//var box = document.getElementById('box')
+
+//box.addEventListener('mousemove', runEvent);
+
+var itemInput = document.querySelector('input[type="text"]')
+var form = document.querySelector('form');
+
+itemInput.addEventListener('keydown', runEvent)
+
+function runEvent(e){
+console.log('EVENT TYPE: '+e.type)
+console.log(e.target.value)
+document.getElementById('output').innerHTML ='<h3>'+e.target.value
+'</h3>'
+//document.body.style.backgroundColor= "rgb("+e.offsetX+","+e.offsetY+",40)"
+
+
+}
